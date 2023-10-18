@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <title>ToDo App</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="">ToDo</a>
+      </div>
+
+      <ul>
+        <li><a href="SignUp.html">Sign Up</a></li>
+        <li><a href="Login.html">Login</a></li>
+        <li><a href="" onclick="loginAlert()">Home</a></li>
+      </ul>
+
+      <div class="menu">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+      </div>
+    </nav>
+    <div class="container"></div>
+
+    <div class="carousel-container">
+      <a class="btn btn-left"><i class="fa-solid fa-caret-left"></i></a>
+      <div class="content">
+        <h3>
+          Stay organized and boost productivity with our user-friendly to-do
+          app. Create, manage, and prioritize tasks with ease. Never miss an
+          important deadline or forget an essential errand again. Experience a
+          more organized and efficient life with our app.
+        </h3>
+        <a href="SignUp.html"
+          ><button class="btn">Sign Up to continue...</button></a
+        >
+      </div>
+      <a class="btn btn-right"><i class="fa-solid fa-caret-right"></i></a>
+    </div>
+  </body>
+  <script src="app.js" defer></script>
+  <script>
+    const menu = document.querySelector(".menu");
+    const menuList = document.querySelector("ul");
+    menu.addEventListener("click", () => {
+      menuList.classList.toggle("showmenu");
+    });
+
+    function loginAlert() {
+      alert("Login to continue...");
+    }
+  </script>
+</html>

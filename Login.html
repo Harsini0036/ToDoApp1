@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ToDo Login</title>
+    <link rel="icon" href="Images/favicon.ico" />
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+      body {
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.2rem;
+      }
+      .btn {
+        background-color: rgb(30, 30, 130);
+        border-radius: 30px;
+        border: 1px solid rgb(132, 73, 186);
+        padding: 0.5rem 1.3rem;
+        font-size: 1.2rem;
+      }
+
+      .btn:hover {
+        background-color: rgb(132, 73, 186);
+        box-shadow: 0 2px 4px 0 rgb(30, 30, 130), 0 3px 10px 0 rgb(30, 30, 130);
+      }
+
+      form {
+        width: 60%;
+        margin: 20px auto;
+      }
+
+      .form-label {
+        color: rgb(42, 42, 156);
+      }
+
+      .form-check-input:checked {
+        background-color: rgb(132, 73, 186);
+        border-color: rgb(132, 73, 186);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-3">
+      <h3
+        style="
+          text-align: center;
+          color: blueviolet;
+          font-size: 2rem;
+          text-shadow: 1px 1px #525151;
+        "
+      >
+        <span
+          style="
+            color: rgb(50, 50, 200);
+            text-shadow: 1px 1px #525151;
+            font-size: 2.5rem;
+          "
+          >ToDo</span
+        >
+        Login
+      </h3>
+
+      <form action="" id="form1" method="post">
+        <p
+          style="
+            color: rgb(151, 104, 196);
+            text-align: center;
+            font-size: 1.5rem;
+          "
+        ></p>
+        <div class="mb-3 mt-3">
+          <label for="uname1" class="form-label">Username:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="uname1"
+            placeholder="Enter username"
+            name="uname1"
+          />
+
+          <div class="error"></div>
+        </div>
+
+        <div class="mb-3">
+          <label for="pswdLogin" class="form-label">Password:</label>
+          <input
+            type="password"
+            class="form-control"
+            id="pswdLogin"
+            placeholder="Enter password"
+            name="pswdLogin"
+          />
+
+          <div class="error"></div>
+        </div>
+
+        <div class="center" style="text-align: center">
+          <input
+            type="submit"
+            value="Login"
+            class="btn btn-primary"
+            onclick="auth()"
+          />
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="Script1.js">
+    /* function auth() {
+      const uname = document.querySelector("#uname1").value;
+      const pswd = document.querySelector("#pswdLogin").value;
+
+      if (uname === "admin" && pswd === "admin") {
+        window.location.assign("Home.html");
+        alert("Login successful");
+      } else {
+        alert("Login denied");
+        return;
+      }
+    } */
+  </script>
+</html>
